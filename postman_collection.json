@@ -1,0 +1,55 @@
+{
+  "info": {
+    "name": "Book Catalog API - Sample",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Register",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"name\\\": \\\"Gaurav\\\",\\n  \\\"email\\\": \\\"gaurav@example.com\\\",\\n  \\\"password\\\": \\\"password123\\\"\\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/users/register"
+        }
+      }
+    },
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\\n  \\\"email\\\": \\\"gaurav@example.com\\\",\\n  \\\"password\\\": \\\"password123\\\"\\n}"
+        },
+        "url": {
+          "raw": "{{baseUrl}}/api/users/login"
+        }
+      }
+    },
+    {
+      "name": "Get Books",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "{{baseUrl}}/api/books"
+        }
+      }
+    }
+  ]
+}
